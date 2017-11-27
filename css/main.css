@@ -1,0 +1,119 @@
+html, body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000077;
+}
+
+.page {
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 0 2em 3em;
+}
+
+.logo {
+    text-align: center;
+}
+
+header nav {
+    border-bottom: 1px solid #ccc;
+    padding: 1em 0 2em;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+    /* usage of flexbox for ease of styling */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul li {
+    flex: 1 0 auto;
+}
+
+header nav ul li a {
+    display: block;
+    padding: 0 1em;
+    text-align: center;
+    border-right: 1px solid #ccc;
+    text-decoration: none;
+    font-weight: 700;
+    color: #333;
+}
+header nav ul li:last-child a {
+    border: 0;
+}
+
+header nav ul li a:hover {
+    color: #999;
+}
+
+#menu {
+    background-color: #ffffaa;
+    width: 100%;
+    max-width: 480px;
+    margin: 1em 0;
+}
+#menu th, #menu td {
+    padding: .5em;
+}
+.t-header {
+    background-color: #ffff99;
+}
+
+#contact {
+    background-color: #efefef;
+    padding: .25em;
+}
+#contact ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 480px;
+}
+#contact ul li {
+    padding: .5em 0;
+}
+#contact ul li label {
+    display: block;
+    padding: .25em;
+    background-color: #ccc;
+}
+#contact ul li input:not([type='radio']), #contact ul li textarea {
+    width: 100%;
+    padding: .25em;
+}
+
+#passcode {
+    color: #ff0000;
+    background-color: #ffc0cb;
+    padding: .25em .5em;
+    display: none;
+}
+
+.form-foot {
+    margin-top: 1em;
+    padding-top: 1em;
+    border-top: 1px solid #ccc;
+}
+
+.slick-slide img {
+    width: 100%;
+}
+
+footer p {
+    text-align: center
+}
